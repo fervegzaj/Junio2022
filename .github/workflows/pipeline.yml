@@ -18,12 +18,12 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '16'
-      - name: Imprime uvus
-        run: echo 'fervegzaj'
       - name: Construyendo y probando el codigo
         run: |
           chmod +x gradlew        
           ./gradlew assemble
+      - name: Imprime uvus
+        run: echo 'fervegzaj'
   Test:
    runs-on: ubuntu-latest
    needs: Build
@@ -39,10 +39,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '16'
-      - name: Imprime uvus
-        run: echo 'fervegzaj'
       - name: Probando el código
         run: |
           chmod +x gradlew        
           ./gradlew test
+      - name: Imprime uvus
+        run: echo 'fervegzaj'
 
