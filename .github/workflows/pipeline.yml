@@ -38,7 +38,8 @@ jobs:
           distribution: 'temurin'
           java-version: '16'
       - name: Probando el código
-        run: |
+      - run: echo "fervegzaj"
+      - run: |
           chmod +x gradlew        
           ./gradlew test
 
