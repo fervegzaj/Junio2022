@@ -18,8 +18,10 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '16'
+      - name: Imprime uvus
+      - run: echo 'fervegzaj'
       - name: Construyendo y probando el codigo
-        run: |
+      - run: |
           chmod +x gradlew        
           ./gradlew assemble
   Test:
@@ -37,8 +39,9 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '16'
+      - name: Imprime uvus
+      - run: echo 'fervegzaj'
       - name: Probando el código
-      - run: echo "fervegzaj"
       - run: |
           chmod +x gradlew        
           ./gradlew test
